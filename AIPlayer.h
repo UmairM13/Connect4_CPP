@@ -10,6 +10,7 @@ class AIPlayer : public Player
 public:
     AIPlayer(char p) : Player(p)
     {
+        // Seed the random number generator
         std::srand(static_cast<unsigned>(std::time(0)));
     }
 
