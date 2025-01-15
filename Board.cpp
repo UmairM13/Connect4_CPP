@@ -3,10 +3,15 @@
 
 class Board
 {
+    // defines a 2D vector of characters to represent the game board
+    // provides methods to display the board, check if a move is valid, drop a piece into a column, check for a win, and check if the board is full
 private:
     std::vector<std::vector<char>> board;
 
 public:
+    // constructor initializes the board with empty spaces
+    // displayBoard method prints the current state of the board to the console
+
     Board()
     {
         board = std::vector<std::vector<char>>(6, std::vector<char>(7, '.')); // 6 rows, 7 columns
